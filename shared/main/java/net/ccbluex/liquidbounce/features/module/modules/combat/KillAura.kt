@@ -421,8 +421,10 @@ class KillAura : Module() {
         if(airBypass.get()){
             if(mc.thePlayer!!.onGround){
                 rangeValue.set(groundRange.get())
+                rotations.set("down")
             } else {
                 rangeValue.set(airRange.get())
+                rotations.set("hytrotation")
             }
         }
         if (lightingValue.get()) {
